@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ページのタイトルを「ジャンル★ルーレット」に変更 -->
+    <title>ジャンル★ルーレット</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts "Baloo 2" を読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <h1> 見出しを追加 -->
+    <h1>ジャンル★ルーレット</h1>
+    <div class="container">
+        <div class="input-area">
+            <!-- プレースホルダーを子ども向けに変更 -->
+            <textarea id="genres" placeholder="ここに好きなジャンルをいれてね！
+（1行に1つずつ）"></textarea>
+            <!-- ボタンに class="btn" を付与し、テキストを分かりやすく変更 -->
+            <button id="generate" class="btn">ルーレットをつくる</button>
+        </div>
+        <div class="roulette-area">
+            <!-- 親コンテナを relative に -->
+            <div id="wheel-wrapper">
+              <canvas id="roulette" width="300" height="300"></canvas>
+              <div id="pointer">▼</div>
+            </div>
+            <!-- ボタンに class="btn" を付与し、テキストを分かりやすく変更 -->
+            <button id="spin" class="btn">スタート！</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+   <!-- 当選モーダル -->
+   <div id="modal" class="hidden">
+     <div class="modal-content">
+       <h2 id="winner-text">ジャンル</h2>
+       <button id="close-modal" class="btn">とじる</button>
+     </div>
+   </div>
+</body>
+</html>
