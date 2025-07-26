@@ -73,6 +73,20 @@ canvas {
     transform: scale(1.05); /* 少し大きくする */
 }
 
+.btn-ghost{
+  display:inline-block;
+  background:#ffffffcc;
+  border:2px solid #ffc36b;
+  color:#ff8f00;
+  border-radius:16px;
+  padding:12px 20px;
+  margin-left:12px;   /* 生成ボタンとの間隔 */
+}
+.btn-ghost:hover{ background:#fff; }
+.actions, .buttons, .controls{
+  display:flex; gap:12px; flex-wrap:wrap; align-items:center;
+}
+
 /* --- ポインターのスタイル --- */
 #wheel-wrapper {
     position: relative;
